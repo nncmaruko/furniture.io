@@ -1,0 +1,469 @@
+@charset "UTF-8";
+/* -------------------- 
+ product
+ ---------------------- */
+h1 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.pagenation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pagenation li {
+  font-size: 12px;
+  padding: 0 20px;
+  text-align: center;
+  width: 70px;
+}
+
+.product-title {
+  font-family: Noto Serif JP;
+  font-size: 20px;
+}
+
+main .item-group {
+  max-width: 800px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+main .item-group .item-img {
+  width: 50%;
+}
+
+.description {
+  display: inline-block;
+  width: 43%;
+}
+.description .product-story {
+  text-align: justify;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.description .price {
+  margin-bottom: 30px;
+}
+
+.description dl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.description dl dt {
+  font-size: 12px;
+  line-height: 1.3rem;
+  width: 30%;
+}
+.description dl dd {
+  font-size: 12px;
+  line-height: 1.3rem;
+  width: 70%;
+}
+
+.backto-btn {
+  font-size: 12px;
+  text-align: center;
+}
+.backto-btn:hover {
+  opacity: 0.8;
+}
+
+/* -------------------- 
+ SP
+ --------------------  */
+@media screen and (max-width: 900px) {
+  main .item-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .item-group .item-img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  main .item-group .description {
+    width: 100%;
+  }
+}
+main .our-story {
+  max-width: 570px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .our-story p {
+  line-height: 2rem;
+  text-align: justify;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+main .our-story .backto-homebtn {
+  font-size: 12px;
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+/* -------------------- 
+ SP
+ --------------------  */
+@media screen and (max-width: 900px) {
+  .backto-homebtn {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+main .profile {
+  max-width: 600px;
+}
+main .profile .profile-data {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+main .profile .profile-data dt {
+  text-align: left;
+  padding: 20px 0;
+  border-bottom: 1px solid #dbdbdb;
+  width: 30%;
+}
+main .profile .profile-data dd {
+  text-align: left;
+  padding: 20px 0;
+  border-bottom: 1px solid #dbdbdb;
+  width: 70%;
+}
+
+.google-map {
+  margin-top: 40px;
+}
+
+.google-map iframe {
+  width: 100%;
+  height: 300px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  margin-bottom: 30px;
+}
+
+.backto-homebtn {
+  font-size: 12px;
+  display: block;
+  margin: 0 auto;
+}
+.backto-homebtn:hover {
+  opacity: 0.8;
+}
+
+/* -------------------- 
+ SP
+ --------------------  */
+@media screen and (max-width: 900px) {
+  main .profile .profile-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .profile .profile-data dt {
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: none;
+  }
+  main .profile .profile-data dd {
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+}
+.footerFixed {
+  max-width: 1360px;
+  min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+  position: relative; /* ←相対位置 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* ↑ヘッダーやフッターを含むすべての要素の高さ＝min-height:100vhになるように指定 */
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Hiragino Kaku Gothic ProN;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1360px;
+  padding: 25px 40px;
+  margin: 0 auto;
+}
+
+/* -------------------- 
+ header
+ --------------------  */
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.toggle-btn {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  z-index: 20;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.toggle-btn span {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.toggle-btn span:nth-child(1) {
+  top: 10px;
+}
+.toggle-btn span:nth-child(2) {
+  bottom: 10px;
+}
+
+/*
+ハンバーガーメニューの線の設定（メニューが開いている時）
+線の色を白に変更
+*/
+.open .toggle-btn span {
+  background-color: #fff;
+}
+.open .toggle-btn span:nth-child(1) {
+  -webkit-transform: translateY(4px) rotate(-45deg);
+  transform: translateY(4px) rotate(-45deg);
+}
+.open .toggle-btn span:nth-child(2) {
+  -webkit-transform: translateY(-4px) rotate(45deg);
+  transform: translateY(-4px) rotate(45deg);
+}
+
+/*
+ハンバーガーメニュー
+メニューが閉じている時は、「left: -300px;」で画面左に隠し、
+「opacity: 0;」で非表示にしている
+*/
+.navArea {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  color: #fff;
+  opacity: 0.8;
+  padding: 36px 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 20;
+  opacity: 0;
+}
+
+.navArea li {
+  margin-bottom: 14px;
+}
+
+/* ーーーーーー クリックした時 ーーーーーー
+ーーーーーーーーーーーーーーーーーー */
+.open .navArea {
+  left: 0;
+  opacity: 1;
+}
+
+/* ーーーーーー mask(黒い背景) ーーーーーー
+ーーーーーーーーーーーーーーーーーー */
+.mask {
+  display: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.open .mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* -------------------- 
+ main
+ ---------------------- */
+main .wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+ul.top-area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+.logo img {
+  width: 180px;
+  height: 21px;
+}
+
+main li {
+  margin-bottom: 40px;
+}
+
+main li img {
+  width: 295px;
+}
+
+main li .product-name {
+  font-size: 12px;
+  color: #333;
+  padding-top: 10px;
+}
+
+main li .price {
+  font-size: 12px;
+  color: #333;
+}
+
+.viewmore {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* -------------------- 
+ footer
+ ---------------------- */
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.footer ul li {
+  padding-right: 30px;
+  font-size: 12px;
+}
+
+footer p {
+  font-size: 10px;
+  color: #333;
+}
+
+/* -------------------- 
+SP
+ ---------------------- */
+@media screen and (max-width: 900px) {
+  ul.top-area {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer p {
+    padding-top: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

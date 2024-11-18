@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+main .our-story {
+    max-width: 570px;
+    flex-direction: column;
+    p {
+        line-height: 2rem;
+        text-align: justify;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    .backto-homebtn {
+        font-size: 12px;
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+/* -------------------- 
+ SP
+ --------------------  */
+ @media screen and (max-width: 900px) {
+    .backto-homebtn {
+        margin-top: 30px;
+        text-align: center;
+    }
+ }

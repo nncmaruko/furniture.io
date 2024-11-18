@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@mixin dlRule {
+    text-align: left;
+    padding: 20px 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+@mixin spdlRule {
+    width: 100%;
+    padding-bottom: 5px;
+
+}
+
+main .profile {
+    max-width: 600px;
+    .profile-data {
+        display: flex;
+        flex-wrap: wrap;
+
+        dt {
+            @include dlRule;
+            width: 30%;
+        }
+        dd {
+            @include dlRule;
+            width: 70%;
+        }
+    }
+}
+
+.google-map {
+    margin-top: 40px;
+}
+.google-map iframe {
+    // max-width: 600px;
+    width: 100%;
+    height: 300px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin-bottom: 30px;
+}
+
+.backto-homebtn {
+    font-size: 12px;
+    display: block;
+    // text-align: center;
+    // width: 100%;
+    margin: 0 auto;
+    &:hover {
+        opacity: 0.8;
+    } 
+}
+
+
+/* -------------------- 
+ SP
+ --------------------  */
+
+ @media screen and (max-width:900px) {
+    main .profile .profile-data {
+        flex-direction: column;
+        dt {
+            @include spdlRule;
+            border-bottom: none;
+        }
+        dd {
+            @include spdlRule;
+            padding-top: 5px;
+        }
+    }
+ }
